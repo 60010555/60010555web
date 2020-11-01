@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('strong.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Health Cal<span class="w3-hide-small">culator</span> +</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">What is BMR & TDEE ?</h3>
+  <p><B>BMR</B> ย่อมาจาก Basal Metabolic Rate คืออัตราการเผาผลาญพลังงานของร่างกายในแต่ละวันนั่นเอง เป็นอัตราการเผาผลาญพลังงานขั้นต่ำ หมายถึงว่า เป็นการเผาผลาญพลังงานโดยที่ไม่เกี่ยวข้องกับการทำกิจกรรมในแต่ละวันของเรา
+    ร่างกายของเรามีการเผาผลาญพลังงานเพื่อให้เราสามารถดำรงชีวิตอยู่ได้ โดยพลังงานที่เราใช้จะแบ่งได้เป็น 3 รูปแบบ คือ
+    <br>– พลังงานจากการเคลื่อนไหวร่างกาย (Physical activity) คือการขยับตัว การทำกิจกรรมทุกอย่าง คิดเป็นประมาณ 25% ของพลังงานที่ถูกใช้ไปในแต่ละวัน
+    <br>– พลังงานที่ใช้ในการย่อยอาหาร (Thermic effect of food) ตั้งแต่การเคี้ยวไปจนถึงกระบวนการย่อยอาหาร คิดเป็นประมาณ 10% ของพลังงานที่ถูกใช้ไปในแต่ละวัน
+    <br>– พลังงาน BMR คืออัตราการเผาผลาญพลังงานของร่างกายในแต่ละวัน ในการทำงานของอวัยวะต่างๆ ทั้งหมด คิดเป็นประมาณ 65% ของพลังงานที่ใช้ในแต่ละวัน
+    <br><br><b>Total Daily Energy Expenditure</B> หรือ TDEE (ปริมาณการใช้พลังงานของแต่ละคนต่อวัน) จึงจำเป็นจะต้องเข้ามามีบทบาทในการคำนวณแคลอรี่ในแต่ละวันด้วยการคำนวณ TDEE นั้นอาจจะเรียกได้ว่ามีประโยชน์มากกว่าค่า BMR เนื่องจาก สามารถช่วย ลดไขมัน หรือลดกล้ามเนื้อได้ จากการ + หรือ – 500 จาก ค่า ที่ได้
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>BMR หรือก็คือพลังงาน (แคลอรี) ขั้นต่ำที่ร่างกายต้องการใช้ในแต่ละวัน เป็นสิ่งที่คุณจะต้องทราบ เพื่อนำไปวางแผนในการควบคุมอาหารและการออกกำลังกาย
+
+        การคำนวณหาค่าพลังงานต่ำสุดที่ร่างกายต้องการต่อวัน (BMR) จะใช้ข้อมูล คือ เพศ อายุ น้ำหนักตัว และส่วนสูง โดยเพศชายจะมีค่าความต้องการพลังงานมากกว่าเพศหญิง
+        
+        นอกจากนี้ ค่า BMR ของแต่ละบุคคลอาจแตกต่างกันไป โดยแปรผันตามปัจจัยต่างๆ ด้วย เช่น อายุ ฮอร์โมน มวลกล้ามเนื้อ พฤติกรรมการรับประทานอาหาร และการเคลื่อนไหวร่างกาย เป็นต้น
+        
+        การทราบค่า BMR ช่วยให้เราควบคุมการกินได้อย่างเหมาะสม เพราะเราจะทราบว่าควรกินไม่เกินกี่แคลอรีในแต่ละวัน หรือหากต้องการออกกำลังกาย ควรเผาผลาญพลังงานเท่าไรดี เพื่อให้ไปถึงเป้าหมายลดน้ำหนักที่วางไว้</p>
+    </div>
+  </div>
+  <div class=" w3-center w3-section " style="padding-top: 50px;">
+    <h2>BMR & TDEE Calculator</h2>
+    <div style="text-align: left; padding-left: 15%;">
+      <label>เพศ :</label>
+      <select id="gender" name="gender" style="margin-left: 5px;">
+        <option value="male">ชาย</option>
+        <option value="female">หญิง</option>
+      </select><br>
+      <label>ส่วนสูง (เซนติเมตร) : </label>
+      <input type="text" id="hight" style="margin-left: 5px; margin-top: 5px;"><br>
+      <label>น้ำหนัก (กิโลกรัม) : </label>
+      <input type="text" id="weight" style="margin-left: 5px; margin-top: 5px;"><br>
+      <label>อายุ (ปี) : </label>
+      <input type="text" id="age" style="margin-left: 5px; margin-top: 5px;"><br>
+      <label style=" margin-top: 15px;">เลือกพฤติกรรมการใช้ชีวิตประจำวันของท่าน</label><br>
+      <select id="activity" name="activity" >
+        <option value="1">นั่งทำงานอยู่กับที่ และไม่ได้ออกกำลังกายเลย หรือน้อยมาก</option>
+        <option value="2">ออกกำลังกายหรือเล่นกีฬาเล็กน้อย 1-3 วัน/สัปดาห์, เดินบ้างเล็กน้อย ทำงานออฟฟิศ</option>
+        <option value="3">ออกกำลังกายหรือเล่นกีฬาปานกลาง 3-5 วัน/สัปดาห์, เคลื่อนที่ตลอดเวลา</option>
+        <option value="4">ออกกำลังกายหรือเล่นกีฬาอย่างหนัก 6-7 วัน/สัปดาห์</option>
+        <option value="5">ออกกำลังกายหรือเล่นกีฬาอย่างหนัก หรือเป็นนักกีฬา ทำงานที่ใช้แรงงานมาก</option>
+    </select><br>
+      <div style="margin-top: 10px;">
+      <button onclick="Calculate()">Calculate</button>
+      </div></div> <p id="myText"></p>
+      <p id="myText2"></p></div>
+     
+    
+    
+    
+    
+    <script type="text/javascript">
+        function Calculate() {
+            var gender=document.getElementById('gender').value;
+        var hight=document.getElementById('hight').value;
+        var weight=document.getElementById('weight').value;
+        var age=document.getElementById('age').value;
+        var activity=document.getElementById('activity').value;
+    
+    
+        if(gender=="male") {
+            var bmr = 66 +( (13.7 * weight ) + ( 5*hight ) )-( 6.8*age );
+            console.log(bmr)
+        }
+            
+        else if (gender=='female') {
+            var bmr = 665 +((9.6*weight)+(1.8*hight))-(4.7*age);
+        }
+    
+        if(activity=='1') {
+            var tdee = bmr *1.2;
+        }
+        else if (activity=='2') {
+            var tdee = bmr *1.375;
+        }
+        
+        else if (activity=='3') {
+            var tdee = bmr *1.55;
+        }
+        else if (activity=='4') {
+            var tdee = bmr*1.725;
+        }
+        else if (activity=='5') {
+            var tdee = bmr*1.9;
+        }
+    
+        document.getElementById("myText").innerHTML = ("BMR (Basal Metabolic Rate) พลังงานที่จำเป็นพื้นฐานในการมีชีวิต : "+ bmr.toFixed() +" กิโลแคลอรี่");
+        document.getElementById("myText2").innerHTML = ("TDEE (Total Daily Energy Expenditure) พลังงานที่คุณใช้ในแต่ละวัน : "+ tdee.toFixed() +" กิโลแคลอรี่\n");
+        }</script>
+
+</body>
+</html>
